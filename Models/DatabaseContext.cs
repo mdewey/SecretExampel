@@ -14,7 +14,6 @@ namespace SecretExampel.Models
         public DatabaseContext(IConfiguration configuration)
         {
             this.ConnectionString = configuration["ConnectionString"];
-            Console.WriteLine(this.ConnectionString);
         }
         private string ConvertPostConnectionToConnectionString(string connection)
         {
